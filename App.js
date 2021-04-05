@@ -2,6 +2,7 @@
 import React from 'react';
 import { StyleSheet, Image, View, Text} from 'react-native';
 import {Video} from 'expo-av';
+import Time from "./components/time";
 
 export default function App() {
 
@@ -26,10 +27,7 @@ export default function App() {
       </View>
        {/* place time */}
       <View style={styles.bottomLeft}>
-      <Text style={{color:"white"}}>AFRICA</Text>
-        <Text style={{color:"white"}}>Local Time 
-        <Text style={{color:"orange"}}> 11:30</Text>
-        </Text>
+        <Time/>
       </View>
       {/* logo */}
       <Image style={styles.logo} 
